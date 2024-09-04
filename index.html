@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TFC Lottie Example</title>
+    <script src="/assets/lottie.min.js"></script>
+    <style>
+      html, body {background: #130070;}
+    </style>
+  </head>
+  <body>
+    <div id="container1"></div>
+    <div id="container2"></div>
+
+    <script>
+      lottie.loadAnimation({
+        container: document.getElementById('container1'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/bubble-blunt-animation-desktop.json',
+      })
+
+      lottie.loadAnimation({
+        container: document.getElementById('container2'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/bubble-blunt-animation-mobile.json',
+      })
+    </script>
+  </body>
+</html>
